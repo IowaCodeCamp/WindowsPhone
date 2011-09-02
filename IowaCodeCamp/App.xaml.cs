@@ -1,19 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
+﻿using System.Collections.Generic;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Animation;
 using System.Windows.Navigation;
-using System.Windows.Shapes;
 using IowaCodeCamp.library.entity.session;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
-using IowaCodeCamp.library.entity;
 
 namespace IowaCodeCamp
 {
@@ -65,12 +55,21 @@ namespace IowaCodeCamp
         // This code will not execute when the application is first launched
         private void Application_Activated(object sender, ActivatedEventArgs e)
         {
+            IDictionary<string, object> state = PhoneApplicationService.Current.State;
+
+            if (state.ContainsKey("session"))
+            {
+                this.selectedSession = (Session)state["session"];
+            }
         }
 
         // Code to execute when the application is deactivated (sent to background)
         // This code will not execute when the application is closing
         private void Application_Deactivated(object sender, DeactivatedEventArgs e)
         {
+            IDictionary<string, object> state = PhoneApplicationService.Current.State;
+
+            state["session"] = this.selectedSession;
         }
 
         // Code to execute when the application is closing (eg, user hit Back)

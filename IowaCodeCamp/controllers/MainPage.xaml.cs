@@ -8,7 +8,7 @@ using Microsoft.Phone.Controls;
 using IowaCodeCamp.library.service;
 using IowaCodeCamp.library.presentation;
 
-namespace IowaCodeCamp
+namespace IowaCodeCamp.controllers
 {
     public partial class MainPage : PhoneApplicationPage, ISessionListController
     {
@@ -47,7 +47,7 @@ namespace IowaCodeCamp
             if (listbox != null && listbox.SelectedIndex > -1)
             {
                 var selectedSession = listbox.SelectedItem as Session;
-                App app = (App)Application.Current;
+                var app = (App)Application.Current;
                 app.selectedSession = selectedSession;
 
                 listbox.SelectedIndex = -1;

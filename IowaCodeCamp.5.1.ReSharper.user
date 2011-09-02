@@ -44,7 +44,6 @@
   <RecentFiles>
     <RecentFiles>
       <File id="261BBEFE-DA8A-401E-9306-0FD51D36BD0C/d:entity/f:SessionJsonSimplifierTest.cs" caret="3537" fromTop="17" />
-      <File id="261BBEFE-DA8A-401E-9306-0FD51D36BD0C/d:entity/f:SessionDeserializerTest.cs" caret="2041" fromTop="18" />
       <File id="028C8F24-F3A8-46E3-972D-592ECA5C592B/f:App.xaml.cs" caret="0" fromTop="0" />
       <File id="028C8F24-F3A8-46E3-972D-592ECA5C592B/d:Properties/f:WMAppManifest.xml" caret="1119" fromTop="19" />
       <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:webservice/f:SessionWebService.cs" caret="0" fromTop="0" />
@@ -56,6 +55,7 @@
       <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:entity/d:session/f:SessionDeserializer.cs" caret="0" fromTop="0" />
       <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:entity/d:session/f:Session.cs" caret="0" fromTop="0" />
       <File id="028C8F24-F3A8-46E3-972D-592ECA5C592B/d:controllers/f:MainPage.xaml.cs" caret="1858" fromTop="39" />
+      <File id="261BBEFE-DA8A-401E-9306-0FD51D36BD0C/d:entity/f:SessionDeserializerTest.cs" caret="2686" fromTop="20" />
     </RecentFiles>
     <RecentEdits>
       <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:entity/d:session/f:SessionJsonSimplifier.cs" caret="105" fromTop="3" />

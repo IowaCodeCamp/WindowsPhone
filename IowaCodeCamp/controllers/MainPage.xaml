@@ -1,5 +1,5 @@
 ﻿<phone:PhoneApplicationPage 
-    x:Class="IowaCodeCamp.MainPage"
+    x:Class="IowaCodeCamp.controllers.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
@@ -37,7 +37,7 @@
                             </Grid.ColumnDefinitions>
                             <TextBlock
                                         Grid.Row="0"
-                                        Text="{Binding time}"
+                                        Text="{Binding session}"
                                         FontWeight="ExtraBold"
                                         FontSize="24"
                                         VerticalAlignment="Center"/>
