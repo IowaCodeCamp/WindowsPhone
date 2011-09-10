@@ -5,65 +5,43 @@
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit" mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="800"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
-    shell:SystemTray.IsVisible="True">
+    shell:SystemTray.IsVisible="False">
 
-    <!--LayoutRoot is the root grid where all page content is placed-->
+    <phone:PhoneApplicationPage.Resources>
+        <DataTemplate x:Key="citiesItemTemplate">
+            <StackPanel Grid.Column="0"  VerticalAlignment="Top">
+                <TextBlock Text="{Binding session}" FontSize="28"/>
+                <TextBlock Text="{Binding speakerName}" FontSize="24"/>
+            </StackPanel>
+        </DataTemplate>
+
+        <DataTemplate x:Key="groupHeaderTemplate">
+            <Border Background="Silver" Margin="0,5,0,0">
+                <TextBlock Text="{Binding Title}" FontSize="22" Foreground="Black"/>
+            </Border>
+        </DataTemplate>
+    </phone:PhoneApplicationPage.Resources>
+
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <Grid.RowDefinitions>
             <RowDefinition Height="65"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Background="Orange">
             <TextBlock x:Name="PageTitle" Text="Iowa Code Camp" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" FontSize="40" FontStyle="Normal" Height="65" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
-        <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" DataContext="{x:Null}">
-            <ListBox Name="SessionList" SelectionChanged="listBox_SelectionChanged" Margin="0,-10,0,0">
-                <ListBox.ItemTemplate>
-                    <DataTemplate>
-                        <Grid Height="150">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition/>
-                            </Grid.ColumnDefinitions>
-                            <TextBlock
-                                        Grid.Row="0"
-                                        Text="{Binding session}"
-                                        FontWeight="ExtraBold"
-                                        FontSize="24"
-                                        VerticalAlignment="Center"/>
-                        </Grid>
-                    </DataTemplate>
-                </ListBox.ItemTemplate>
-                <ListBox.ItemContainerStyle>
-                    <Style TargetType="ListBoxItem">
-                        <Setter Property="Height" Value="150"/>
-                        <Setter Property="Margin" Value="0,5,0,5" />
-                    </Style>
-                </ListBox.ItemContainerStyle>
-            </ListBox>
+            <toolkit:LongListSelector x:Name="sessionList" Background="Transparent" SelectionChanged="listBox_SelectionChanged"
+                 ItemTemplate="{StaticResource citiesItemTemplate}"
+					GroupHeaderTemplate="{StaticResource groupHeaderTemplate}" Margin="0,0,0,0">
+            </toolkit:LongListSelector>
         </Grid>
     </Grid>
- 
-    <!--Sample code showing usage of ApplicationBar-->
-    <!--<phone:PhoneApplicationPage.ApplicationBar>
-        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
-            <shell:ApplicationBar.MenuItems>
-                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
-                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
-            </shell:ApplicationBar.MenuItems>
-        </shell:ApplicationBar>
-    </phone:PhoneApplicationPage.ApplicationBar>-->
-
 </phone:PhoneApplicationPage>

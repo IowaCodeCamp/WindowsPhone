@@ -51,6 +51,7 @@
     <Reference Include="System.Net" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="entity\session\Group.cs" />
     <Compile Include="entity\session\Session.cs" />
     <Compile Include="entity\session\SessionDeserializer.cs" />
     <Compile Include="entity\session\SessionJsonSimplifier.cs" />

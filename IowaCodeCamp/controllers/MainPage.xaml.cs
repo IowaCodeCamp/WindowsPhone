@@ -23,11 +23,11 @@ namespace IowaCodeCamp.controllers
         {
             if (sessions == null || sessions.ToList().Count < 1)
             {
-                this.Dispatcher.BeginInvoke(() => ShowNoInternetDialog());
+                Dispatcher.BeginInvoke(() => ShowNoInternetDialog());
             }
             else
             {
-                this.Dispatcher.BeginInvoke(() => SetItemSourceForSessionListBox(sessions));
+                Dispatcher.BeginInvoke(() => SetItemSourceForSessionListBox(sessions));
             }
         }
 
@@ -38,19 +38,23 @@ namespace IowaCodeCamp.controllers
 
         private void SetItemSourceForSessionListBox(IEnumerable<Session> sessions)
         {
-            SessionList.ItemsSource = sessions;
+            var sessionByTime = from s in sessions
+                                group s by s.time
+                                into c
+                                orderby c.Key descending 
+                                select new Group<Session>(c.Key, c);
+
+            sessionList.ItemsSource = sessionByTime;
         }
 
         private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var listbox = (sender as ListBox);
-            if (listbox != null && listbox.SelectedIndex > -1)
+            var listbox = (sender as LongListSelector);
+            if (listbox != null)
             {
                 var selectedSession = listbox.SelectedItem as Session;
                 var app = (App)Application.Current;
                 app.selectedSession = selectedSession;
-
-                listbox.SelectedIndex = -1;
 
                 NavigationService.Navigate(new Uri("/controllers/SessionDetails.xaml", UriKind.Relative));
             }

@@ -1,5 +1,4 @@
 ﻿using System.Windows;
-using IowaCodeCamp.library.entity.session;
 using Microsoft.Phone.Controls;
 
 namespace IowaCodeCamp.controllers
