@@ -96,6 +96,9 @@
     <Content Include="Background.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Resource Include="images\arrow.png" />
+    <Resource Include="images\arrowLight.png" />
+    <Resource Include="images\loadingimg.png" />
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <ItemGroup>

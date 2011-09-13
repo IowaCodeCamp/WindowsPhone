@@ -57,6 +57,7 @@
     <Compile Include="entity\session\SessionJsonSimplifier.cs" />
     <Compile Include="entity\session\SessionResults.cs" />
     <Compile Include="entity\speaker\Speaker.cs" />
+    <Compile Include="presentation\ImageLookupController.cs" />
     <Compile Include="presentation\ISessionListController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="service\SessionService.cs" />

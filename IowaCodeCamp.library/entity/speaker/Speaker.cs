@@ -6,5 +6,9 @@
         public string title { get; set; }
         public string bio { get; set; }
         public string img { get; set; }
+        public string fullImageUri 
+        {
+            get { return "http://toranbillups.com/Images/toranb.jpg"; }
+        }
     }
 }
