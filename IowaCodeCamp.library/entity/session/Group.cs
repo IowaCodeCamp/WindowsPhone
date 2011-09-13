@@ -4,6 +4,7 @@ namespace IowaCodeCamp.library.entity.session
 {
     public class Group<T> : IEnumerable<T>
     {
+        public string FormattedTitle { get { return " " + Title; } }
         public string Title { get; set; }
         public IList<T> Items { get; set; }
 

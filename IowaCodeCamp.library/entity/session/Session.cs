@@ -12,5 +12,16 @@ namespace IowaCodeCamp.library.entity.session
         {
             get { return speaker.name; }
         }
+        public string formattedSessionName
+        {
+            get
+            {
+                if (session.Length < 38)
+                    return session;
+
+                var actualName = session.Substring(0, 38);
+                return actualName.Trim() + "...";
+            }
+        }
     }
 }

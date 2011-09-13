@@ -15,14 +15,15 @@
     <phone:PhoneApplicationPage.Resources>
         <DataTemplate x:Key="citiesItemTemplate">
             <StackPanel Grid.Column="0"  VerticalAlignment="Top">
-                <TextBlock Text="{Binding session}" FontSize="28"/>
-                <TextBlock Text="{Binding speakerName}" FontSize="24"/>
+                <TextBlock Text="{Binding formattedSessionName}" FontSize="24" FontWeight="Bold"/>
+                <TextBlock Text="{Binding speakerName}" FontSize="20"/>
+                <Line x:Name="Line1" X1="5" Y1="10" X2="475" Y2="10" Stroke="White" Canvas.Top="10" StrokeDashArray="4 2"/>
             </StackPanel>
         </DataTemplate>
 
         <DataTemplate x:Key="groupHeaderTemplate">
-            <Border Background="Silver" Margin="0,5,0,0">
-                <TextBlock Text="{Binding Title}" FontSize="22" Foreground="Black"/>
+            <Border Background="#838901" Margin="0,5,0,0" Height="28">
+                <TextBlock Text="{Binding FormattedTitle}" FontSize="22" Foreground="White" Margin="0,-2,0,0"/>
             </Border>
         </DataTemplate>
     </phone:PhoneApplicationPage.Resources>
@@ -33,7 +34,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <StackPanel x:Name="TitlePanel" Grid.Row="0" Background="Orange">
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Background="#FF9000">
             <TextBlock x:Name="PageTitle" Text="Iowa Code Camp" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" FontSize="40" FontStyle="Normal" Height="65" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
