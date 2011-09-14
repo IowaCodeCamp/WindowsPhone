@@ -69,6 +69,9 @@
     <Compile Include="controllers\SessionDetails.xaml.cs">
       <DependentUpon>SessionDetails.xaml</DependentUpon>
     </Compile>
+    <Compile Include="controllers\SpeakerDetails.xaml.cs">
+      <DependentUpon>SpeakerDetails.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -81,6 +84,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="controllers\SessionDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="controllers\SpeakerDetails.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -7,6 +7,7 @@ namespace IowaCodeCamp.library.entity.session
         public string session { get; set; }
         public string time { get; set; }
         public string desc { get; set; }
+        public string room { get; set; }
         public Speaker speaker { get; set; }
         public string speakerName
         {

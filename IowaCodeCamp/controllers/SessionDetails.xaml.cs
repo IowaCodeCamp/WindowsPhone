@@ -28,7 +28,7 @@ namespace IowaCodeCamp.controllers
             loadSessionName.Text = session.session;
             loadSessionTime.Text = session.time;
             loadSessionDesc.Text = session.desc;
-            loadSessionRoom.Text = "XRB 300";
+            loadSessionRoom.Text = session.room;
             
             loadSpeakerName.Text = session.speakerName;
             this.Dispatcher.BeginInvoke(() => imageLookupController.SetImageFromUri(session.speaker.fullImageUri, loadImg));
@@ -36,7 +36,7 @@ namespace IowaCodeCamp.controllers
 
         private void ViewSpeakerInfo_Click(object sender, RoutedEventArgs e)
         {
-            
+            NavigationService.Navigate(new Uri("/controllers/SpeakerDetails.xaml", UriKind.Relative));
         }
     }
 }
