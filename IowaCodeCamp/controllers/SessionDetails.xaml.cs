@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 using IowaCodeCamp.library.presentation;
 using Microsoft.Phone.Controls;
 
@@ -31,6 +32,11 @@ namespace IowaCodeCamp.controllers
             
             loadSpeakerName.Text = session.speakerName;
             this.Dispatcher.BeginInvoke(() => imageLookupController.SetImageFromUri(session.speaker.fullImageUri, loadImg));
+        }
+
+        private void ViewSpeakerInfo_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

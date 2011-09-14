@@ -16,7 +16,7 @@
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <Grid.RowDefinitions>
             <RowDefinition Height="65"/>
-            <RowDefinition Height="100"/>
+            <RowDefinition Height="68"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -24,11 +24,11 @@
             <TextBlock x:Name="PageTitle" Text="Iowa Code Camp" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" FontSize="40" FontStyle="Normal" Height="65" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
-        <Grid x:Name="Titlebar" Grid.Row="1" Margin="0,7,0,0">
-            <TextBlock x:Name="loadSessionName" Text="Developing For Windows Phone 7.5" FontWeight="ExtraBold" TextWrapping="Wrap" FontSize="26" HorizontalAlignment="Left" />
+        <Grid x:Name="Titlebar" Grid.Row="1" Margin="0,0,0,0">
+            <TextBlock x:Name="loadSessionName" VerticalAlignment="Center" FontWeight="ExtraBold" TextWrapping="Wrap" FontSize="26" HorizontalAlignment="Left" Height="68" />
         </Grid>
 
-        <Grid x:Name="ContentPanel" Grid.Row="2" Margin="0,-20,0,0">
+        <Grid x:Name="ContentPanel" Grid.Row="2" Margin="0,0,0,0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="160"/>
                 <ColumnDefinition Width="10"/>
@@ -42,70 +42,82 @@
                 <Image x:Name="loadImg" Source="../images/loadingimg.png" Grid.Row="0"/>
             </Grid>
 
-            <Grid Grid.Column="2" Margin="0,-12,0,0">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="85"/>
-                    <ColumnDefinition Width="10"/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-                <Grid Grid.Column="0">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="55"/>
-                        <RowDefinition Height="55"/>
-                        <RowDefinition Height="55"/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <TextBlock
+            <Grid Grid.Column="2" Margin="0,-388,0,0" Height="290">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="85"/>
+                        <ColumnDefinition Width="10"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="45"/>
+                            <RowDefinition Height="45"/>
+                            <RowDefinition Height="45"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <TextBlock
                                         Grid.Row="0"
                                         Text="Speaker"
                                         FontWeight="Bold"
                                         FontSize="22"
                                         VerticalAlignment="Center"/>
-                    <TextBlock
+                        <TextBlock
                                         Grid.Row="1"
                                         Text="Time"
                                         FontWeight="Bold"
                                         FontSize="22"
                                         VerticalAlignment="Center"/>
-                    <TextBlock
+                        <TextBlock
                                         Grid.Row="2"
                                         Text="Room"
                                         FontWeight="Bold"
                                         FontSize="22"
                                         VerticalAlignment="Center"/>
-                </Grid>
-                <Grid Grid.Column="2">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="55"/>
-                        <RowDefinition Height="55"/>
-                        <RowDefinition Height="55"/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <TextBlock
+                    </Grid>
+                    <Grid Grid.Column="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="45"/>
+                            <RowDefinition Height="45"/>
+                            <RowDefinition Height="45"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <TextBlock
                                         Grid.Row="0"
                                         Text="loadSpeakerName"
                                         FontWeight="Normal"
                                         FontSize="20"
                                         x:Name="loadSpeakerName"
                                         VerticalAlignment="Center"/>
-                    <TextBlock
+                        <TextBlock
                                         Grid.Row="1"
                                         Text="loadTime"
                                         x:Name="loadSessionTime"
                                         FontSize="20"
                                         VerticalAlignment="Center"/>
-                    <TextBlock
+                        <TextBlock
                                         Grid.Row="2"
                                         Text="Time"
                                         FontWeight="Normal"
                                         FontSize="20"
                                         x:Name="loadSessionRoom"
                                         VerticalAlignment="Center"/>
+                    </Grid>
                 </Grid>
+                
+                <Grid Grid.Row="1" Margin="0,-65,0,0">
+                    <Button Name="btnReserve" Click="ViewSpeakerInfo_Click" Content="View Speaker Info" Height="80" Width="300" />
+                </Grid>
+                
             </Grid>
         </Grid>
 
-        <Grid Grid.Row="3" Margin="0,210,0,0">
+        <Grid Grid.Row="3" Margin="0,225,0,0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="900"/>
             </Grid.RowDefinitions>
