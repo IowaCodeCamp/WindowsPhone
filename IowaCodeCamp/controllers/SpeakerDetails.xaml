@@ -42,79 +42,43 @@
                 <Image x:Name="loadImg" Source="../images/loadingimg.png" Grid.Row="0"/>
             </Grid>
 
-            <Grid Grid.Column="2" Margin="0,-388,0,0" Height="290">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="150"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-
-                <Grid Grid.Row="0">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="85"/>
-                        <ColumnDefinition Width="10"/>
-                        <ColumnDefinition/>
-                    </Grid.ColumnDefinitions>
-                    <Grid Grid.Column="0">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="45"/>
-                            <RowDefinition Height="45"/>
-                            <RowDefinition Height="45"/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-                        <TextBlock
+            <Grid Grid.Column="2" Margin="0,-398,0,0" Height="290">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="55"/>
+                        <RowDefinition Height="55"/>
+                        <RowDefinition Height="55"/>
+                        <RowDefinition Height="55"/>
+                    <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock
                                         Grid.Row="0"
-                                        Text="Speaker"
+                                        Text="Website"
                                         FontWeight="Bold"
                                         FontSize="22"
                                         VerticalAlignment="Center"/>
-                        <TextBlock
-                                        Grid.Row="1"
-                                        Text="Time"
-                                        FontWeight="Bold"
-                                        FontSize="22"
-                                        VerticalAlignment="Center"/>
-                        <TextBlock
-                                        Grid.Row="2"
-                                        Text="Room"
-                                        FontWeight="Bold"
-                                        FontSize="22"
-                                        VerticalAlignment="Center"/>
-                    </Grid>
-                    <Grid Grid.Column="2">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="45"/>
-                            <RowDefinition Height="45"/>
-                            <RowDefinition Height="45"/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-                        <TextBlock
-                                        Grid.Row="0"
-                                        Text=""
-                                        FontWeight="Normal"
-                                        FontSize="20"
-                                        x:Name="loadSpeakerUri"
-                                        VerticalAlignment="Center"/>
-                        <TextBlock
+                    <TextBlock
                                         Grid.Row="1"
                                         Text=""
-                                        x:Name="loadSessionTime"
-                                        FontSize="20"
+                                        FontWeight="Normal"
+                                        FontSize="22"
+                                        x:Name="loadWebsite"
                                         VerticalAlignment="Center"/>
-                        <TextBlock
+
+                <TextBlock
                                         Grid.Row="2"
+                                        Text="Location"
+                                        FontWeight="Bold"
+                                        FontSize="22"
+                                        VerticalAlignment="Center"/>
+                
+                <TextBlock
+                                        Grid.Row="3"
                                         Text=""
                                         FontWeight="Normal"
-                                        FontSize="20"
-                                        x:Name="loadSessionRoom"
+                                        FontSize="22"
+                                        x:Name="loadLocation"
                                         VerticalAlignment="Center"/>
-                    </Grid>
                 </Grid>
-
-                <Grid Grid.Row="1" Margin="0,-65,0,0">
-                    
-                </Grid>
-
-            </Grid>
         </Grid>
 
         <Grid Grid.Row="3" Margin="0,225,0,0">

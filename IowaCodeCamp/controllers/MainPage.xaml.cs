@@ -15,6 +15,7 @@ namespace IowaCodeCamp.controllers
         public MainPage()
         {
             InitializeComponent();
+
             var service = new SessionService(this);
             service.GetListOfSessions();
         }

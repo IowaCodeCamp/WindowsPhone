@@ -26,6 +26,8 @@ namespace IowaCodeCamp.controllers
 
             loadSpeakerName.Text = session.speaker.name;
             loadSpeakerDesc.Text = session.speaker.bio;
+            loadWebsite.Text = session.speaker.web;
+            loadLocation.Text = session.speaker.location;
 
             this.Dispatcher.BeginInvoke(() => imageLookupController.SetImageFromUri(session.speaker.fullImageUri, loadImg));
         }
