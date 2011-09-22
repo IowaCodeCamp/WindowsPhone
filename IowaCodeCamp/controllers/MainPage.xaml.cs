@@ -39,13 +39,7 @@ namespace IowaCodeCamp.controllers
 
         private void SetItemSourceForSessionListBox(IEnumerable<Session> sessions)
         {
-            var sessionByTime = from s in sessions
-                                group s by s.time
-                                into c
-                                orderby c.Key descending 
-                                select new Group<Session>(c.Key, c);
-
-            sessionList.ItemsSource = sessionByTime;
+            sessionList.ItemsSource = new SessionOrganizer().SortAndGroupSessionsByTime(sessions);
         }
 
         private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
