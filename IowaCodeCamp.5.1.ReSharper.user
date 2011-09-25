@@ -8,17 +8,17 @@
   </SettingsComponent>
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
-      <Item value="public" priority="13" />
-      <Item value="void" priority="2" />
-      <Item value="var" priority="24" />
-      <Item value="new" priority="14" />
-      <Item value="sut" priority="2" />
-      <Item value="Assert`0" priority="5" />
+      <Item value="public" priority="17" />
+      <Item value="void" priority="4" />
+      <Item value="var" priority="27" />
+      <Item value="new" priority="17" />
+      <Item value="sut" priority="3" />
+      <Item value="Assert`0" priority="6" />
       <Item value="simpleJson" priority="0" />
       <Item value="SessionDeserializerTest`0" priority="0" />
       <Item value="sessions" priority="8" />
-      <Item value="private" priority="2" />
-      <Item value="string" priority="10" />
+      <Item value="private" priority="4" />
+      <Item value="string" priority="11" />
       <Item value="from" priority="0" />
       <Item value="group" priority="1" />
       <Item value="by" priority="0" />
@@ -28,11 +28,11 @@
       <Item value="c" priority="4" />
       <Item value="select" priority="0" />
       <Item value="Group" priority="3" />
-      <Item value="this" priority="5" />
+      <Item value="this" priority="8" />
       <Item value="sessionByTime" priority="4" />
       <Item value="List" priority="3" />
       <Item value="Session`0" priority="4" />
-      <Item value="return" priority="8" />
+      <Item value="return" priority="12" />
       <Item value="speaker" priority="1" />
       <Item value="descending" priority="0" />
       <Item value="LongListSelector`0" priority="0" />
@@ -84,12 +84,26 @@
       <Item value="fourth" priority="0" />
       <Item value="formattedTime" priority="1" />
       <Item value="yy" priority="0" />
+      <Item value="selectedSession" priority="2" />
+      <Item value="bool" priority="0" />
+      <Item value="false" priority="1" />
+      <Item value="SpecialSessionIdentifierTest`0" priority="0" />
+      <Item value="isSpecialChar" priority="0" />
+      <Item value="if" priority="0" />
+      <Item value="sessionName" priority="0" />
+      <Item value="true" priority="0" />
+      <Item value="sessionOrganizer" priority="1" />
+      <Item value="MainPage`0" priority="0" />
+      <Item value="SessionOrganizer" priority="0" />
+      <Item value="SpecialSessionIdentifier" priority="0" />
+      <Item value="specialSessionIdentifier" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:IowaCodeCamp.library.entity.session.SessionJsonSimplifier">
       <Item value="SimplifySessionJson`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@NUnit.Framework.Assert">
       <Item value="AreEqual`0" priority="5" />
+      <Item value="IsTrue`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:IowaCodeCamp.library.entity.session.SessionDeserializer">
       <Item value="ParseSessionJsonAndReturnListOfSessions`0" priority="0" />
@@ -109,9 +123,9 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:IowaCodeCamp.library.entity.session.Session">
       <Item value="time" priority="2" />
-      <Item value="speaker" priority="4" />
+      <Item value="speaker" priority="5" />
       <Item value="speakerName" priority="0" />
-      <Item value="session" priority="0" />
+      <Item value="session" priority="3" />
       <Item value="desc" priority="0" />
       <Item value="room" priority="0" />
       <Item value="sessionStartTime" priority="1" />
@@ -124,6 +138,8 @@
       <Item value="citiesListGropus" priority="0" />
       <Item value="progressHelper" priority="0" />
       <Item value="progress" priority="0" />
+      <Item value="sessionOrganizer" priority="0" />
+      <Item value="specialSessionIdentifier" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Microsoft.Phone.Controls.LongListSelector">
       <Item value="ItemsSource" priority="0" />
@@ -169,63 +185,68 @@
     <ItemStatistics item="Qualified:System.DateTime">
       <Item value="TimeOfDay" priority="1" />
     </ItemStatistics>
+    <ItemStatistics item="Qualified:IowaCodeCamp.library.entity.session.SpecialSessionIdentifier">
+      <Item value="SessionNameRequiresSpecialTreatment`0" priority="1" />
+    </ItemStatistics>
   </CompletionStatisticsManager>
   <RecentFiles>
     <RecentFiles>
       <File id="028C8F24-F3A8-46E3-972D-592ECA5C592B/f:App.xaml.cs" caret="0" fromTop="0" />
       <File id="028C8F24-F3A8-46E3-972D-592ECA5C592B/d:Properties/f:WMAppManifest.xml" caret="1119" fromTop="19" />
-      <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:webservice/f:SessionWebService.cs" caret="0" fromTop="0" />
-      <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:service/f:SessionService.cs" caret="0" fromTop="0" />
       <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:presentation/f:ISessionListController.cs" caret="0" fromTop="0" />
       <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:entity/d:session/f:SessionResults.cs" caret="0" fromTop="0" />
       <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:entity/d:session/f:SessionJsonSimplifier.cs" caret="0" fromTop="0" />
-      <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:entity/d:session/f:SessionDeserializer.cs" caret="0" fromTop="0" />
       <File id="261BBEFE-DA8A-401E-9306-0FD51D36BD0C/d:entity/f:SessionJsonSimplifierTest.cs" caret="0" fromTop="0" />
       <File id="028C8F24-F3A8-46E3-972D-592ECA5C592B/d:controllers/f:MainPage.xaml" caret="1786" fromTop="27" />
-      <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:presentation/f:ImageLookupController.cs" caret="600" fromTop="20" />
-      <File id="028C8F24-F3A8-46E3-972D-592ECA5C592B/d:controllers/f:SessionDetails.xaml.cs" caret="597" fromTop="19" />
       <File id="261BBEFE-DA8A-401E-9306-0FD51D36BD0C/d:entity/f:SessionDeserializerTest.cs" caret="2866" fromTop="20" />
-      <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:entity/d:speaker/f:Speaker.cs" caret="333" fromTop="9" />
-      <File id="028C8F24-F3A8-46E3-972D-592ECA5C592B/d:controllers/f:SpeakerDetails.xaml.cs" caret="582" fromTop="18" />
       <File id="028C8F24-F3A8-46E3-972D-592ECA5C592B/d:controllers/f:SpeakerDetails.xaml" caret="2361" fromTop="44" />
       <File id="028C8F24-F3A8-46E3-972D-592ECA5C592B/d:controllers/f:SessionDetails.xaml" caret="5806" fromTop="31" />
-      <File id="028C8F24-F3A8-46E3-972D-592ECA5C592B/d:controllers/f:MainPage.xaml.cs" caret="1374" fromTop="20" />
       <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:entity/d:session/f:SessionOrganizer.cs" caret="567" fromTop="14" />
       <File id="261BBEFE-DA8A-401E-9306-0FD51D36BD0C/d:entity/f:SessionOrganizerTest.cs" caret="769" fromTop="23" />
       <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:entity/d:session/f:Session.cs" caret="769" fromTop="27" />
       <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:entity/d:session/f:Group.cs" caret="313" fromTop="10" />
+      <File id="028C8F24-F3A8-46E3-972D-592ECA5C592B/d:controllers/f:SpeakerDetails.xaml.cs" caret="0" fromTop="0" />
+      <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:presentation/f:ImageLookupController.cs" caret="222" fromTop="9" />
+      <File id="028C8F24-F3A8-46E3-972D-592ECA5C592B/d:controllers/f:SessionDetails.xaml.cs" caret="1113" fromTop="33" />
+      <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:service/f:SessionService.cs" caret="1214" fromTop="30" />
+      <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:entity/d:session/f:SessionDeserializer.cs" caret="609" fromTop="21" />
+      <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:entity/d:speaker/f:Speaker.cs" caret="374" fromTop="11" />
+      <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:webservice/f:SessionWebService.cs" caret="1047" fromTop="28" />
+      <File id="261BBEFE-DA8A-401E-9306-0FD51D36BD0C/d:entity/f:SpecialSessionIdentifierTest.cs" caret="345" fromTop="10" />
+      <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:entity/d:session/f:SpecialSessionIdentifier.cs" caret="91" fromTop="2" />
+      <File id="028C8F24-F3A8-46E3-972D-592ECA5C592B/d:controllers/f:MainPage.xaml.cs" caret="279" fromTop="8" />
     </RecentFiles>
     <RecentEdits>
-      <File id="028C8F24-F3A8-46E3-972D-592ECA5C592B/d:controllers/f:SessionDetails.xaml" caret="5806" fromTop="31" />
-      <File id="028C8F24-F3A8-46E3-972D-592ECA5C592B/d:controllers/f:MainPage.xaml.cs" caret="1274" fromTop="28" />
-      <File id="028C8F24-F3A8-46E3-972D-592ECA5C592B/d:controllers/f:MainPage.xaml.cs" caret="1274" fromTop="32" />
-      <File id="028C8F24-F3A8-46E3-972D-592ECA5C592B/d:controllers/f:MainPage.xaml.cs" caret="237" fromTop="7" />
-      <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:entity/d:session/f:Group.cs" caret="898" fromTop="41" />
-      <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:entity/d:session/f:Session.cs" caret="767" fromTop="26" />
-      <File id="028C8F24-F3A8-46E3-972D-592ECA5C592B/d:controllers/f:MainPage.xaml.cs" caret="1274" fromTop="36" />
-      <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:entity/d:session/f:Group.cs" caret="898" fromTop="41" />
-      <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:entity/d:session/f:Group.cs" caret="898" fromTop="33" />
-      <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:entity/d:session/f:Group.cs" caret="898" fromTop="21" />
-      <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:entity/d:session/f:SessionOrganizer.cs" caret="0" fromTop="0" />
-      <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:entity/d:session/f:SessionOrganizer.cs" caret="229" fromTop="8" />
-      <File id="028C8F24-F3A8-46E3-972D-592ECA5C592B/d:controllers/f:MainPage.xaml.cs" caret="1374" fromTop="20" />
-      <File id="261BBEFE-DA8A-401E-9306-0FD51D36BD0C/d:entity/f:SessionOrganizerTest.cs" caret="489" fromTop="19" />
-      <File id="261BBEFE-DA8A-401E-9306-0FD51D36BD0C/d:entity/f:SessionOrganizerTest.cs" caret="1634" fromTop="43" />
-      <File id="261BBEFE-DA8A-401E-9306-0FD51D36BD0C/d:entity/f:SessionOrganizerTest.cs" caret="1564" fromTop="43" />
-      <File id="261BBEFE-DA8A-401E-9306-0FD51D36BD0C/d:entity/f:SessionOrganizerTest.cs" caret="215" fromTop="19" />
-      <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:entity/d:session/f:SessionOrganizer.cs" caret="398" fromTop="11" />
-      <File id="261BBEFE-DA8A-401E-9306-0FD51D36BD0C/d:entity/f:SessionOrganizerTest.cs" caret="1605" fromTop="30" />
-      <File id="261BBEFE-DA8A-401E-9306-0FD51D36BD0C/d:entity/f:SessionOrganizerTest.cs" caret="1172" fromTop="24" />
-      <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:entity/d:session/f:SessionOrganizer.cs" caret="567" fromTop="14" />
-      <File id="261BBEFE-DA8A-401E-9306-0FD51D36BD0C/d:entity/f:SessionOrganizerTest.cs" caret="215" fromTop="7" />
-      <File id="261BBEFE-DA8A-401E-9306-0FD51D36BD0C/d:entity/f:SessionOrganizerTest.cs" caret="500" fromTop="16" />
-      <File id="261BBEFE-DA8A-401E-9306-0FD51D36BD0C/d:entity/f:SessionOrganizerTest.cs" caret="1618" fromTop="41" />
       <File id="261BBEFE-DA8A-401E-9306-0FD51D36BD0C/d:entity/f:SessionOrganizerTest.cs" caret="1591" fromTop="41" />
       <File id="261BBEFE-DA8A-401E-9306-0FD51D36BD0C/d:entity/f:SessionOrganizerTest.cs" caret="77" fromTop="1" />
       <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:entity/d:session/f:Session.cs" caret="1079" fromTop="31" />
       <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:entity/d:session/f:Session.cs" caret="361" fromTop="10" />
       <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:entity/d:session/f:Session.cs" caret="462" fromTop="15" />
       <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:entity/d:session/f:Session.cs" caret="769" fromTop="27" />
+      <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:entity/d:speaker/f:Speaker.cs" caret="493" fromTop="17" />
+      <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:entity/d:speaker/f:Speaker.cs" caret="467" fromTop="13" />
+      <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:webservice/f:SessionWebService.cs" caret="911" fromTop="24" />
+      <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:webservice/f:SessionWebService.cs" caret="1481" fromTop="46" />
+      <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:webservice/f:SessionWebService.cs" caret="1253" fromTop="32" />
+      <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:webservice/f:SessionWebService.cs" caret="988" fromTop="25" />
+      <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:entity/d:session/f:SpecialSessionIdentifier.cs" caret="0" fromTop="0" />
+      <File id="261BBEFE-DA8A-401E-9306-0FD51D36BD0C/d:entity/f:SpecialSessionIdentifierTest.cs" caret="309" fromTop="11" />
+      <File id="261BBEFE-DA8A-401E-9306-0FD51D36BD0C/d:entity/f:SpecialSessionIdentifierTest.cs" caret="230" fromTop="8" />
+      <File id="261BBEFE-DA8A-401E-9306-0FD51D36BD0C/d:entity/f:SpecialSessionIdentifierTest.cs" caret="1733" fromTop="52" />
+      <File id="261BBEFE-DA8A-401E-9306-0FD51D36BD0C/d:entity/f:SpecialSessionIdentifierTest.cs" caret="759" fromTop="22" />
+      <File id="261BBEFE-DA8A-401E-9306-0FD51D36BD0C/d:entity/f:SpecialSessionIdentifierTest.cs" caret="974" fromTop="29" />
+      <File id="261BBEFE-DA8A-401E-9306-0FD51D36BD0C/d:entity/f:SpecialSessionIdentifierTest.cs" caret="1189" fromTop="36" />
+      <File id="261BBEFE-DA8A-401E-9306-0FD51D36BD0C/d:entity/f:SpecialSessionIdentifierTest.cs" caret="1419" fromTop="40" />
+      <File id="261BBEFE-DA8A-401E-9306-0FD51D36BD0C/d:entity/f:SpecialSessionIdentifierTest.cs" caret="1706" fromTop="48" />
+      <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:entity/d:session/f:SpecialSessionIdentifier.cs" caret="586" fromTop="19" />
+      <File id="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2/d:entity/d:session/f:SpecialSessionIdentifier.cs" caret="554" fromTop="18" />
+      <File id="028C8F24-F3A8-46E3-972D-592ECA5C592B/d:controllers/f:MainPage.xaml.cs" caret="1777" fromTop="26" />
+      <File id="028C8F24-F3A8-46E3-972D-592ECA5C592B/d:controllers/f:MainPage.xaml.cs" caret="2252" fromTop="28" />
+      <File id="028C8F24-F3A8-46E3-972D-592ECA5C592B/d:controllers/f:MainPage.xaml.cs" caret="2031" fromTop="24" />
+      <File id="028C8F24-F3A8-46E3-972D-592ECA5C592B/d:controllers/f:MainPage.xaml.cs" caret="2377" fromTop="34" />
+      <File id="028C8F24-F3A8-46E3-972D-592ECA5C592B/d:controllers/f:MainPage.xaml.cs" caret="985" fromTop="26" />
+      <File id="028C8F24-F3A8-46E3-972D-592ECA5C592B/d:controllers/f:MainPage.xaml.cs" caret="534" fromTop="15" />
+      <File id="028C8F24-F3A8-46E3-972D-592ECA5C592B/d:controllers/f:MainPage.xaml.cs" caret="1266" fromTop="34" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>

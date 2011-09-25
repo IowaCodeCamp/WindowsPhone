@@ -12,11 +12,19 @@ namespace IowaCodeCamp.controllers
 {
     public partial class MainPage : PhoneApplicationPage, ISessionListController
     {
-        public MainPage()
+        private readonly SessionOrganizer sessionOrganizer;
+        private readonly SpecialSessionIdentifier specialSessionIdentifier;
+
+        public MainPage() : this(new SessionOrganizer(), new SpecialSessionIdentifier()) {}
+
+        public MainPage(SessionOrganizer sessionOrganizer, SpecialSessionIdentifier specialSessionIdentifier)
         {
             InitializeComponent();
 
+            this.sessionOrganizer = sessionOrganizer;
+            this.specialSessionIdentifier = specialSessionIdentifier;
             var service = new SessionService(this);
+
             service.GetListOfSessions();
         }
 
@@ -39,20 +47,24 @@ namespace IowaCodeCamp.controllers
 
         private void SetItemSourceForSessionListBox(IEnumerable<Session> sessions)
         {
-            sessionList.ItemsSource = new SessionOrganizer().SortAndGroupSessionsByTime(sessions);
+            sessionList.ItemsSource = sessionOrganizer.SortAndGroupSessionsByTime(sessions);
         }
 
         private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var listbox = (sender as LongListSelector);
-            if (listbox != null)
-            {
-                var selectedSession = listbox.SelectedItem as Session;
-                var app = (App)Application.Current;
-                app.selectedSession = selectedSession;
+            if (listbox == null) return;
 
-                NavigationService.Navigate(new Uri("/controllers/SessionDetails.xaml", UriKind.Relative));
+            var selectedSession = listbox.SelectedItem as Session;
+            var app = (App)Application.Current;
+
+            if (specialSessionIdentifier.SessionNameRequiresSpecialTreatment(selectedSession.session))
+            {
+                return;
             }
+
+            app.selectedSession = selectedSession;
+            NavigationService.Navigate(new Uri("/controllers/SessionDetails.xaml", UriKind.Relative));
         }
     }
 }

@@ -11,7 +11,7 @@
 
         public string fullImageUri 
         {
-            get { return "http://toranbillups.com/Images/toranb.jpg"; }
+            get { return "http://iowacodecamp.com/public/images/speakers/" + img; }
         }
     }
 }

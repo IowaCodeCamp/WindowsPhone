@@ -32,13 +32,22 @@ namespace IowaCodeCamp.library.webservice
         private string ReadResponse(IAsyncResult result)
         {
             var request = (HttpWebRequest)result.AsyncState;
-            var response = request.EndGetResponse(result);
-            var dataStream = response.GetResponseStream();
-            var reader = new StreamReader(dataStream);
-            var responseFromServer = reader.ReadToEnd();
-            reader.Close();
-            dataStream.Close();
-            response.Close();
+            var responseFromServer = "";
+
+            try
+            {
+                var response = request.EndGetResponse(result);
+                var dataStream = response.GetResponseStream();
+                var reader = new StreamReader(dataStream);
+                responseFromServer = reader.ReadToEnd();
+                reader.Close();
+                dataStream.Close();
+                response.Close();
+            }
+            catch (WebException e)
+            {
+            }
+
             return responseFromServer;
         }
     }

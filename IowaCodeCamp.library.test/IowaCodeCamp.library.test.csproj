@@ -62,6 +62,7 @@
     <Compile Include="entity\SessionDeserializerTest.cs" />
     <Compile Include="entity\SessionJsonSimplifierTest.cs" />
     <Compile Include="entity\SessionOrganizerTest.cs" />
+    <Compile Include="entity\SpecialSessionIdentifierTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
