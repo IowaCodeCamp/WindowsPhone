@@ -21,7 +21,7 @@
         </Grid.RowDefinitions>
 
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Background="#FF9000">
-            <TextBlock x:Name="PageTitle" Text="Iowa Code Camp" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" FontSize="40" FontStyle="Normal" Height="65" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock x:Name="PageTitle" Text="Session Details" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" FontSize="40" FontStyle="Normal" Height="65" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <Grid x:Name="Titlebar" Grid.Row="1" Margin="0,0,0,0">
