@@ -31,7 +31,6 @@ namespace IowaCodeCamp.library.test.entity
             Assert.AreEqual(sessions.ToList()[0].desc, "very fun session");
             Assert.AreEqual(sessions.ToList()[0].room, "XRB 300");
             Assert.AreEqual(sessions.ToList()[0].speaker.name, "Chris Missal");
-            Assert.AreEqual(sessions.ToList()[0].speaker.title, "Rockstar");
             Assert.AreEqual(sessions.ToList()[0].speaker.bio, "my hero");
             Assert.AreEqual(sessions.ToList()[0].speaker.img, "toranbillups.jpg");
             Assert.AreEqual(sessions.ToList()[0].speaker.web, "http://www.google.com");
