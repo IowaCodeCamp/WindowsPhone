@@ -83,10 +83,10 @@
 
         <Grid Grid.Row="3" Margin="0,225,0,0">
             <Grid.RowDefinitions>
-                <RowDefinition Height="900"/>
+                <RowDefinition Height="1200"/>
             </Grid.RowDefinitions>
 
-            <ScrollViewer Grid.Row="5" Height="900" HorizontalAlignment="Left" Name="scrollViewer1" VerticalAlignment="Top" Width="480">
+            <ScrollViewer Grid.Row="5" Height="1200" HorizontalAlignment="Left" Name="scrollViewer1" VerticalAlignment="Top" Width="480">
                 <TextBlock VerticalAlignment="Top" Text="" Name="loadSpeakerDesc" Width="480" TextWrapping="Wrap" />
             </ScrollViewer>
         </Grid>

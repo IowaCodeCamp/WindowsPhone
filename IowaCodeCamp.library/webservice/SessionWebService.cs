@@ -16,7 +16,7 @@ namespace IowaCodeCamp.library.webservice
 
         public void GetListOfSessions()
         {
-            var request = (HttpWebRequest)WebRequest.Create("http://toranbillups.com/content/examples/icc.html");
+            var request = (HttpWebRequest)WebRequest.Create("http://iowacodecamp.com/data/json");
             request.Method = "GET";
 
             request.BeginGetResponse(new AsyncCallback(GetResponse), request);

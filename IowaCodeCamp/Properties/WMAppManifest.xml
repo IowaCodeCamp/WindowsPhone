@@ -2,7 +2,7 @@
 
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.0">
   <App xmlns="" ProductID="{58a690b2-a3e4-4bc7-a90f-f5649f638cda}" Title="IowaCodeCamp" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal"  Author="IowaCodeCamp author" Description="Sample description" Publisher="IowaCodeCamp">
-    <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
+    <IconPath IsRelative="true" IsResource="false">Application_IconImage_62x62.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_GAMERSERVICES"/>
       <Capability Name="ID_CAP_IDENTITY_DEVICE"/>
@@ -22,7 +22,7 @@
     <Tokens>
       <PrimaryToken TokenID="IowaCodeCampToken" TaskName="_default">
         <TemplateType5>
-          <BackgroundImageURI IsRelative="true" IsResource="false">Background.png</BackgroundImageURI>
+          <BackgroundImageURI IsRelative="true" IsResource="false">Application_IconImage_173x173.png</BackgroundImageURI>
           <Count>0</Count>
           <Title>IowaCodeCamp</Title>
         </TemplateType5>
