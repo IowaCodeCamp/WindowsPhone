@@ -1,0 +1,5 @@
+<Modules>
+  <Module PersistentId="42A8B8E7-7FAC-42A1-B3B2-967E68A784A2" ModuleId="IowaCodeCamp.library" />
+  <Module PersistentId="261BBEFE-DA8A-401E-9306-0FD51D36BD0C" ModuleId="IowaCodeCamp.library.test" />
+  <Module PersistentId="028C8F24-F3A8-46E3-972D-592ECA5C592B" ModuleId="IowaCodeCamp" />
+</Modules>
