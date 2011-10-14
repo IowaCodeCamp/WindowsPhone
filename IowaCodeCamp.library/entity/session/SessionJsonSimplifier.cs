@@ -9,9 +9,9 @@ namespace IowaCodeCamp.library.entity.session
             string simpleJson;
             try
             {
-                var removeFrontCruft = json.Substring(32, json.Length - 32);
+                var removeFrontCruft = json.Substring(73, json.Length - 73);
                 var addedFrontBracket = "{" + removeFrontCruft;
-                simpleJson = addedFrontBracket.Substring(0, addedFrontBracket.Length - 1);
+                simpleJson = addedFrontBracket.Substring(0, addedFrontBracket.Length - 5);
             }
             catch (Exception exception)
             {
