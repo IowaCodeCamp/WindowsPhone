@@ -9,12 +9,13 @@ namespace IowaCodeCamp.library.entity.session
             string simpleJson;
             try
             {
-                var removeFrontCruft = json.Substring(73, json.Length - 73);
+                var removeFrontCruft = json.Substring(36, json.Length - 36);
                 var addedFrontBracket = "{" + removeFrontCruft;
-                simpleJson = addedFrontBracket.Substring(0, addedFrontBracket.Length - 5);
+                simpleJson = addedFrontBracket.Substring(0, addedFrontBracket.Length - 1);
             }
             catch (Exception exception)
             {
+                var x = exception.Message;
                 simpleJson = "";
             }
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Navigation;
 using IowaCodeCamp.library.entity.session;
 using Microsoft.Phone.Controls;
 using IowaCodeCamp.library.service;
@@ -20,12 +21,18 @@ namespace IowaCodeCamp.controllers
         public MainPage(SessionOrganizer sessionOrganizer, SpecialSessionIdentifier specialSessionIdentifier)
         {
             InitializeComponent();
-
             this.sessionOrganizer = sessionOrganizer;
             this.specialSessionIdentifier = specialSessionIdentifier;
-            var service = new SessionService(this);
+        }
 
-            service.GetListOfSessions();
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            if (e.NavigationMode == NavigationMode.New)
+            {
+                var service = new SessionService(this);
+
+                service.GetListOfSessions();
+            }
         }
 
         public void ControllerCallBackWithSessions(IEnumerable<Session> sessions)
